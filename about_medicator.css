@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 2%;
+    height: 70px;
+    align-items: center;
+    background-color: #294661;
+    position: relative;
+    top: 0;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+header > div > img {
+    width: 30px;
+    height: 30px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav > ul > a {
+    color: white;
+}
+
+main {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    min-height: calc(100vh - 70px);
+    margin: 0 2%;
+}
+
+
+main > div {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main > div > div {
+    min-width: 300px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: #294661 0px 0px 10px -5px;
+    opacity: 0.8;
+}
+
+main > div:first-child > div {
+    background-image: url('../assets/pacientes-medicos-divulgacao.jpg');
+}
+
+main > div:last-child > div {
+    background-image: url('../assets/paciente.webp');
+    background-position-x: -100px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    color: #294661;
+    margin-top: 20px;
+}

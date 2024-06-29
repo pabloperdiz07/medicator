@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 2%;
+    height: 70px;
+    align-items: center;
+    background-color: #294661;
+    position: relative;
+    top: 0;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+header > div > img {
+    width: 30px;
+    height: 30px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav > ul > a {
+    color: white;
+}
+
+main {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    min-height: calc(100vh - 70px);
+    margin: 0 2%;
+}
+
+h3 {
+    margin: 10px;
+}
+
+#about-me {
+    list-style:inside;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    flex-direction: column;
+    gap: 5px;
+    display: flex;
+}
+
+main > div {
+    background-color: #dcebf8;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #294661 0 0 6px -2px;
+    margin: 20px 0;
+}
+
+main > div > img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+main > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#social-list {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+#social-list > li>  a > img {
+    width: 30px;
+}
+
+#tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#tech-list > li {
+    width: 180px;
+    background-color: #dcebf8;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+#tech-list > li > img {
+    width: 50px;
+}
+
+
