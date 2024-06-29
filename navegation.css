@@ -1,0 +1,88 @@
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 4%;
+    height: 70px;
+    align-items: center;
+    background-color: #294661;
+    position: relative;
+    top: 0;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+header > div > img {
+    width: 30px;
+    height: 30px;
+}
+
+header > nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav > ul > a {
+    color: white;
+}
+
+#menu-burguer {
+    display: none;
+}
+
+nav > ul > a > li > img {
+    width: 30px;
+}
+
+#mobile-nav-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+}
+
+#exit-mobile-nav {
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+#mobile-nav {
+    width: 40%;
+    min-width: 260px;
+    padding: 20px;
+    background-color: #7990a7;
+}
+
+#mobile-nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@media only screen and (max-width: 690px) {
+    nav > ul {
+        align-items: start;
+    }
+
+    header > nav > ul > a {
+        display: none;
+    }
+    #menu-burguer {
+        display: block;
+    }
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./navegation.css">
     <link rel="stylesheet" href="about_medicator.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,9 +18,20 @@
                 <a href="./index.html"><li>Aplicativos</li></a>
                 <a href="./about_medicator.html"><li><b>Sobre</b></li></a>
                 <a href="./team_medicator.html"><li>Equipe</li></a>
+                <a id="menu-burguer" onclick="navMobileClicked()"><li><img src="/assets/menu.svg" alt=""></li></a>
             </ul>
         </nav>
     </header>
+    <section id="mobile-nav-box">
+        <div id="exit-mobile-nav" onclick="exitNavMobile()"></div>
+        <nav id="mobile-nav">
+            <ul>
+                <a href="./index.html"><li>Aplicativos</li></a>
+                <a href="./about_medicator.html"><li><b>Sobre</b></li></a>
+                <a href="./team_medicator.html"><li>Equipe</li></a>
+            </ul>
+        </nav>
+    </section>
     <main>
         <div>
             <article>
@@ -43,5 +55,6 @@
             </article>
         </div>
     </main>    
+    <script src="./navegation.js"></script>
 </body>
 </html>
