@@ -89,7 +89,7 @@ main > div > div {
 
 
 #tech-list > li {
-    width: 160px;
+    width: 150px;
     background-color: #dcebf8;
     padding: 10px;
     display: flex;
@@ -100,7 +100,7 @@ main > div > div {
 }
 
 #tech-list > li > img {
-    width: 40px;
+    width: 36px;
 }
 
 @media only screen and (max-width: 690px) {
